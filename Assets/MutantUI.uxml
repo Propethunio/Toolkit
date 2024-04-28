@@ -1,0 +1,44 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/mutantCSS.uss?fileID=7433441132597879392&amp;guid=a47b53819cc971945adb09a4d4518cb1&amp;type=3#mutantCSS" />
+    <ui:VisualElement name="bottom-container" style="position: absolute; bottom: 3.7%; right: 0; left: 0; height: 21.3%; flex-direction: row;">
+        <ui:VisualElement name="weapon-container" style="flex-grow: 0; width: 18.2%; left: 2.6%; position: absolute; height: 100%;">
+            <ui:VisualElement name="swapWeapon-container" style="height: 38%; flex-direction: row; background-color: rgba(0, 0, 0, 0.39);">
+                <ui:VisualElement name="SwapBtn-container" style="flex-grow: 0; height: 87px; padding-top: 5px; padding-bottom: 5px; width: 87px; margin-left: 10px;">
+                    <ui:VisualElement style="flex-grow: 0; width: 100%; height: 100%;">
+                        <ui:VisualElement name="buttonIcon-container" style="flex-grow: 0; width: 100%; height: 100%; position: absolute; padding-top: 20px; padding-right: 20px; padding-bottom: 20px; padding-left: 20px;">
+                            <ui:VisualElement name="buttonIcon" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/buttonIcon.png?fileID=2800000&amp;guid=49c35c0f1087d224e9a7a279fcdd3af8&amp;type=3#buttonIcon&quot;);">
+                                <ui:Label tabindex="-1" text="X" parse-escape-sequences="true" display-tooltip-when-elided="true" name="buttonKey" style="color: rgb(255, 255, 255); -unity-text-align: middle-center; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; width: 100%; height: 100%; font-size: 32px; -unity-font-style: bold;" />
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+                        <ui:VisualElement name="swapIcon" style="flex-grow: 0; background-image: url(&quot;project://database/Assets/swapIcon.png?fileID=2800000&amp;guid=f489790f7a285ae4aa8807d13e24b274&amp;type=3#swapIcon&quot;); -unity-background-image-tint-color: rgb(255, 207, 170); width: 100%; height: 100%; position: absolute;" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement name="secondWeaponImage" style="flex-grow: 1; position: absolute; width: 200px; height: 87px; left: 50%; translate: -15% 0; background-image: url(&quot;project://database/Assets/pistol.png?fileID=2800000&amp;guid=579060fea5f272246842a067ee4c9bc0&amp;type=3#pistol&quot;); -unity-background-scale-mode: scale-to-fit;" />
+            </ui:VisualElement>
+            <ui:VisualElement name="mainWeapon-container" style="flex-grow: 1; height: 52%;">
+                <ui:VisualElement name="container" style="flex-grow: 1; background-color: rgb(55, 55, 55); margin-top: 5px; margin-bottom: 5px; border-left-color: rgb(255, 255, 255); border-right-color: rgb(255, 255, 255); border-top-color: rgb(255, 255, 255); border-bottom-color: rgb(255, 255, 255);">
+                    <ui:VisualElement name="border" style="flex-grow: 1; border-left-color: rgb(140, 140, 140); border-right-color: rgb(140, 140, 140); border-top-color: rgb(140, 140, 140); border-bottom-color: rgb(140, 140, 140); border-top-width: 3px; border-right-width: 3px; border-bottom-width: 3px; border-left-width: 3px; margin-top: 4px; margin-right: 4px; margin-bottom: 4px; margin-left: 4px;">
+                        <ui:Label tabindex="-1" text="WEAPON NAME" parse-escape-sequences="true" display-tooltip-when-elided="true" name="weaponName" style="position: absolute; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 2px; padding-right: 0; padding-bottom: 0; padding-left: 4px; background-color: rgba(255, 255, 255, 0); color: rgb(255, 255, 255); -unity-font-style: bold; -unity-text-align: upper-center;" />
+                        <ui:VisualElement name="weaponImage" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/crossbow.png?fileID=2800000&amp;guid=1a0de2527349ad9499949a6e85b4c425&amp;type=3#crossbow&quot;); -unity-background-scale-mode: scale-to-fit;" />
+                        <ui:VisualElement name="VisualElement" style="flex-grow: 1; position: absolute; left: 0; right: 0; bottom: 0; flex-direction: row; padding-bottom: 2px;">
+                            <ui:Label tabindex="-1" text="TYPE" parse-escape-sequences="true" display-tooltip-when-elided="true" name="type" style="color: rgb(255, 255, 255); -unity-text-outline-color: rgb(6, 103, 255); -unity-text-outline-width: 0.5px; margin-left: 0; padding-left: 4px; margin-top: 0; margin-bottom: 0; padding-top: 0; padding-bottom: 0;" />
+                            <ui:VisualElement style="flex-grow: 1; flex-direction: row; position: absolute; right: 0;">
+                                <ui:VisualElement name="dmg-container" style="flex-grow: 1; flex-direction: row; padding-right: 8px;">
+                                    <ui:Label tabindex="-1" text="DAMAGE" parse-escape-sequences="true" display-tooltip-when-elided="true" name="damageTxt" style="-unity-font-style: bold; color: rgb(135, 135, 135); margin-right: 0; margin-left: 0; padding-right: 0; padding-left: 0; margin-top: 0; margin-bottom: 0; padding-top: 0; padding-bottom: 0;" />
+                                    <ui:Label tabindex="-1" text="0" parse-escape-sequences="true" display-tooltip-when-elided="true" name="damageAmount" style="-unity-font-style: bold; color: rgb(255, 255, 255); padding-left: 3px; margin-top: 0; margin-bottom: 0; padding-top: 0;" />
+                                </ui:VisualElement>
+                                <ui:VisualElement name="critical-contianer" style="flex-grow: 1; flex-direction: row;">
+                                    <ui:Label tabindex="-1" text="CRITICAL" parse-escape-sequences="true" display-tooltip-when-elided="true" name="criticalTxt" style="-unity-font-style: bold; color: rgb(255, 113, 0); margin-right: 0; margin-left: 0; padding-right: 0; padding-left: 0; margin-top: 0; margin-bottom: 0; padding-top: 0;" />
+                                    <ui:Label tabindex="-1" text="0" parse-escape-sequences="true" display-tooltip-when-elided="true" name="criticalAmount" style="-unity-font-style: bold; color: rgb(255, 113, 0); padding-left: 3px; margin-top: 0; margin-bottom: 0; padding-top: 0;" />
+                                </ui:VisualElement>
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="actionCostBar" style="flex-grow: 1; height: 10%;">
+                <ui:VisualElement style="flex-grow: 1; height: 100%; width: 60px; align-self: center; background-color: rgb(255, 255, 255); border-top-width: 4px; border-right-width: 4px; border-bottom-width: 4px; border-left-width: 4px; border-left-color: rgb(58, 58, 58); border-right-color: rgb(58, 58, 58); border-top-color: rgb(58, 58, 58); border-bottom-color: rgb(58, 58, 58);" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
